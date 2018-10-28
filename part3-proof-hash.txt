@@ -1,0 +1,15 @@
+
+* Transaction hash for the new star 
+0x0f1721d0ed4c9e4e947a5778ae8c0d077d311bffebbed3931f7edd81234aabf6
+
+* Transaction put star up for sale 
+0x30cdafa7b8798d5a20eb894a1104d68b4808f2a29fdd5b4145056991d6393e04
+
+* Star tokenId
+1
+
+* Contract hash
+0xb62bebbd3b7dd1f0a95e3643483038c4a348b975614ff5f697294e7901918b9c
+
+* Contract address
+0x879975a6f94474f3836d91a09d4c85ebff677874
