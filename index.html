@@ -479,16 +479,15 @@
             );
             // The default (top) wallet account from a list of test accounts 
             web3.eth.defaultAccount = web3.eth.accounts[0];
-            defaultAccount = web3.eth.accounts[0];
-            defaultBalance = web3.eth.getBalance(web3.eth.defaultAccount);
-            sNotary = StarNotary.at('0x2d7ad35465f2ab7ab8b3699a673276567b379229');
+            
             // Grab the contract at specified deployed address with the interface defined by the ABI
-            var starNotary = StarNotary.at('0x2d7ad35465f2ab7ab8b3699a673276567b379229');
+            var starNotary = StarNotary.at('0x879975a6f94474f3836d91a09d4c85ebff677874');
           
             function lookupStarByTokenIdButtonClicked() {
                 let tokenId = document.getElementById('lookup-star-by-token-id').value;
                 if (!tokenId) return; 
-                starNotary.tokenIdToStarInfo(tokenId, function (error, result) {
+                
+                starNotary.tokenIdToStarInfo(tokenId, {from: web3.eth.defaultAccount, gas: 1000000}, function (error, result) {
                     if (!error) {
                             document.getElementById('lookup-star-by-token-id-result').innerText = result
                         } else { 
