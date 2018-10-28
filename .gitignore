@@ -1,0 +1,9 @@
+# gitignore
+
+node_modules
+smart_contracts/node_modules
+
+# Only apps should have lockfiles
+yarn.lock
+package-lock.jso
+.idea
